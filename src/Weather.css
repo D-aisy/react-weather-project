@@ -1,5 +1,35 @@
 .Weather{
-    border: 1px solid #bababa;
+    border: 1.5px solid #bababa;
     border-radius: 4px;
-    margin-top: 40px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #878787;
+    font-family: Raleway, sans-serif; ;
+    max-width: 600px;
 }
+
+.Weather img{
+    max-width: 80px;
+    height: 80px;
+}
+
+.Weather ul{
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.Weather li{
+    list-style: none;
+    line-height: 20px;
+}
+
+.Weather .temperature {
+    font-size: 64px;
+}
+
+.Weather .units {
+    position: relative;
+    top: -32px;
+}
+

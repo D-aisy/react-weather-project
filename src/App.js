@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <div className="container">
       
-      <Weather city="Bristol"/>
+      <Weather city="London"/>
       <p>open sourced code by <a href="https://github.com/D-aisy/react-weather-project" target="_blank" rel="noreferrer">Daisy Cowley</a></p>
     </div>
     </div>

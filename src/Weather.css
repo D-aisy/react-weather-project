@@ -8,7 +8,9 @@
     max-width: 600px;
 }
 
-.Weather img{
+.Weather canvas{
+    margin-top: 10px;
+    margin-right: 10px;
     max-width: 80px;
     height: 80px;
 }

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
 import Loader from "react-loader-spinner";
-import WeatherInfo from "./WeatherInfo"
+import WeatherInfo from "./WeatherInfo";
 
 
 export default function Weather(props){
@@ -11,14 +11,13 @@ export default function Weather(props){
     const [city, setCity] = useState(props.city);
 
     function handleResponse(response){
-        console.log(response)
         setWeatherData({
             temperature: (Math.round(response.data.main.temp)),
             date: new Date(response.data.dt * 1000),
             description: response.data.weather[0].description,
             humidity: response.data.main.humidity,
             wind: (Math.round(response.data.wind.speed)),
-            image: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+            icon: response.data.weather[0].icon,
             city: response.data.name
         })
         setLoaded(true)

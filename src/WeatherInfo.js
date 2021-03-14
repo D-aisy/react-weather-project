@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import FormatDate from "./FormatDate"
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props){
     const [city, setCity] = useState(props.city)
@@ -10,7 +11,7 @@ export default function WeatherInfo(props){
     }
 
     function searchCity(event){
-
+        setCity(event.target.value);
     }
 
     return (
@@ -24,9 +25,10 @@ export default function WeatherInfo(props){
             <div className="clearfix">
             <div className="row">
                 <div className="col-6">
-                    
-                    <img src={props.data.image} alt="sunny" className="float-left"/>
+                    <div className="float-left"/>
+                    <WeatherIcon img={props.data.icon}/>
                     <span className="temperature">{props.data.temperature}</span><span className="units">°C</span>
+                </div>
                 </div>
                 <div className="col-6">
                     <ul>
@@ -36,6 +38,5 @@ export default function WeatherInfo(props){
                 </div>
                 </div>
             </div>
-    </div>
     )
 }

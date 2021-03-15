@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import FormatDate from "./FormatDate"
 import WeatherIcon from "./WeatherIcon";
+import TemperatureUnits from "./TemperatureUnits";
 
 export default function WeatherInfo(props){
     const [city, setCity] = useState(props.city)
@@ -27,7 +28,8 @@ export default function WeatherInfo(props){
                 <div className="col-6">
                     <div className="float-left"/>
                     <WeatherIcon img={props.data.icon}/>
-                    <span className="temperature">{props.data.temperature}</span><span className="units">°C</span>
+                    <TemperatureUnits celsius={props.data.temperature}/>
+                    
                 </div>
                 </div>
                 <div className="col-6">

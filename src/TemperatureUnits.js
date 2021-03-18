@@ -35,6 +35,6 @@ export default function TemperatureUnits(props){
                 <a href="/" onClick={changeToCelsius}>°C </a>| °F
                 </span>
                 </span>
-      )
+      ) 
   }
 }

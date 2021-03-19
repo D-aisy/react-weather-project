@@ -4,16 +4,6 @@ import WeatherIcon from "./WeatherIcon";
 import TemperatureUnits from "./TemperatureUnits";
 
 export default function WeatherInfo(props){
-    const [city, setCity] = useState(props.city)
-
-    function handleSubmit(event){
-        event.preventDefault()
-        // search city
-    }
-
-    function searchCity(event){
-        setCity(event.target.value);
-    }
 
     return (
     <div>

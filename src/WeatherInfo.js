@@ -10,7 +10,7 @@ export default function WeatherInfo(props){
        <h1>{props.data.city}</h1>
           
             <ul className="text-capitalize">
-                <li> <FormatDate date={props.data.date}/> </li>
+                <li>last updated: <FormatDate date={props.data.date}/> </li>
                 <li>{props.data.description}</li>
             </ul>
             <div className="clearfix">

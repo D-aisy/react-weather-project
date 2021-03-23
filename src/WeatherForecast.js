@@ -11,12 +11,11 @@ export default function WeatherForecast(props){
     function handleForecastResponse(response){
         setForecast (response.data)
         setReady (true)
-        console.log (response.data)
     }
 
    
 
-    if (ready){
+    if (ready && props.city === forecast.city.name){
         return (
          <div className="WeatherForecast row">
              <WeatherForecastDisplay data={forecast.list[0]}/>
